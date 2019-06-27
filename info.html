@@ -1,0 +1,68 @@
+<html>
+<head>
+
+  <title>Susannah McInerney | Floral Design</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+  <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+
+</head>
+
+<body>
+<script>
+
+var xhr= new XMLHttpRequest();
+xhr.open('GET', 'static/nav.html', true);
+xhr.onreadystatechange= function() {
+    if (this.readyState!==4) return;
+    if (this.status!==200) return; // or whatever error handling you want
+    document.getElementById('nav').innerHTML= this.responseText;
+};
+xhr.send();
+
+</script>
+
+<nav class="nav" id="nav">
+  </nav>
+
+<!-- border -->
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
+
+
+<!-- Colcade -->
+
+
+<!-- Colcade HTML init -->
+
+<div>
+
+<img src="assets/flower_hands.jpg" class="about-image"/>
+<div class="about-text">
+<h2>Hi, I&rsquo;m Susannah!&nbsp;<br/>
+It&rsquo;s a pleasure to meet you.
+</h2>
+<p>
+I spent the early years of my career in NYC as a project manager in the fashion industry where I could marry my love of organization and creativity. (Left brain, meet right brain.) But something always felt a little&hellip; off.
+</p><p>
+In 2018 I took the leap and switched things up, taking on an apprentice role at a high-end floral studio in Philadelphia. It&rsquo;s one of the best decisions I&rsquo;ve ever made and soon it was easy to see that my background in event planning and design made this new direction a perfect fit.
+</p><p>
+Working with flowers is an honor, as you have been invited to work with people on some of the most emotional and wonderful days of their lives. First and foremost I take my inspiration from color, letting the hues of the season tell a unique story for each client.
+</p><p>
+My philosophy is simple: Always be excited to learn, and never stop growing.
+</p><p>
+Want to talk more? Let&rsquo;s connect!
+<a href="mailto:susannah.mci@gmail.com">susannah.mci@gmail.com</a>
+
+</p>
+</div>
+
+</div>
+
+</body>
+</html>
