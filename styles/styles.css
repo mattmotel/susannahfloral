@@ -1,0 +1,355 @@
+body {
+  margin: 50px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* borders */
+#top, #bottom, #left, #right {
+  background: #FFA2C9;
+  position: fixed;
+}
+
+#left, #right {
+  top: 0;
+  bottom: 0;
+  width: 30px;
+}
+
+#left {
+  left: 0;
+}
+
+#right {
+  right: 0;
+}
+
+#top, #bottom {
+  left: 0;
+  right: 0;
+  height: 30px;
+}
+
+#top {
+  top: 0;
+}
+
+#bottom {
+  bottom: 0;
+}
+
+/* colcade */
+/* Using floats */
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  /* border: 1px solid; */
+}
+
+.grid:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.grid-col {
+  float: left;
+  width: 49%;
+  margin-right: 2%;
+  background: #fff;
+}
+
+#logo-type {
+  width: 85%;
+  fill: #801E47;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.grid-col--4 {
+  margin-right: 0;
+}
+
+/* hide two middle */
+.grid-col--2, .grid-col--3 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .grid-col {
+    width: 32%;
+  }
+
+  .grid-col--2 {
+    display: block;
+  }
+
+  #logo-type {
+    width: 320px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-col {
+    width: 23.5%;
+  }
+
+  .grid-col--2, .grid-col--3 {
+    display: block;
+  }
+}
+
+.grid-item {
+  background: #eee;
+  margin-bottom: 20px;
+}
+
+.grid-item img {
+  width: 100%;
+}
+
+/* .grid-item--a { height:  80px; }
+  .grid-item--b { height: 140px; }
+  .grid-item--c { height: 300px; } */
+nav {
+  color: #F56CB5;
+  margin-bottom: 20px;
+  /* border:6px solid #FFA2C9; */
+  text-align: center;
+  display: flex;
+  flex-direction: row
+}
+
+.hand-gif {
+  width: 170px;
+}
+
+/* #about{float:left;}
+#contact{float:right;} */
+.nav-item {
+  color: #F56CB5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23.5%;
+  background: #ffd6e7;
+  transition: .5s all;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  background: #FFA2C9;
+  color: #fff;
+}
+
+.logo-box {
+  width: 53%;
+  background: #ffecf4;
+  transition: .5s all;
+}
+
+.logo-box:hover {
+  background: #FFA2C9;
+}
+
+.logo-box .logo-type {
+  transition: .5s all;
+}
+
+.logo-box:hover .logo-type {
+  fill: #fff;
+}
+
+.logo {
+  max-width: 450px;
+}
+
+
+/* logo styles */
+
+.st1 {
+  fill: #FFECF4;
+  stroke: #000000;
+  stroke-width: 0.4687;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.st2 {
+  fill: #FF9EC7;
+}
+
+.st3 {
+  fill: #FFFFFF;
+  stroke: #000000;
+  stroke-width: 0.4687;
+  stroke-miterlimit: 10;
+}
+
+.st4 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 0.4687;
+  stroke-miterlimit: 10;
+}
+
+.st5 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 0.4687;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.st6 {
+  fill: #FFC5DD;
+  stroke: #000000;
+  stroke-width: 0.4687;
+  stroke-miterlimit: 10;
+}
+
+.st7 {
+  fill: #FFC5DD;
+  stroke: #000000;
+  stroke-width: 0.4431;
+  stroke-miterlimit: 10;
+}
+
+.st8 {
+  fill: #FFFFFF;
+  stroke: #000000;
+  stroke-width: 0.4687;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.st9 {
+  fill: #FFECF4;
+  stroke: #000000;
+  stroke-width: 0.4687;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st10 {
+  fill: #F56CB5;
+}
+
+.st11 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 0.375;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st12 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 0.375;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.st13 {
+  fill: #FFECF4;
+}
+
+.st14 {
+  fill: #FFC5DD;
+  stroke: #000000;
+  stroke-width: 0.4228;
+  stroke-miterlimit: 10;
+}
+
+.st15 {
+  fill: #FF8FF3;
+  stroke: #000000;
+  stroke-width: 0.4687;
+  stroke-miterlimit: 10;
+}
+
+.st16 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 0.3631;
+  stroke-miterlimit: 10;
+}
+
+.st17 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 0.3964;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st18 {
+  fill: #F49DC3;
+  stroke: #231F20;
+  stroke-width: 0.4687;
+  stroke-miterlimit: 10;
+}
+
+.st19 {
+  fill: none;
+  stroke: #231F20;
+  stroke-width: 0.4687;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.st20 {
+  fill: #F49DC3;
+}
+
+.st21 {
+  fill: none;
+  stroke: #231F20;
+  stroke-width: 0.4687;
+  stroke-miterlimit: 10;
+}
+
+.st22 {
+  fill: #FFFFFF;
+}
+
+.st23 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 0.375;
+  stroke-miterlimit: 10;
+}
+
+.st24 {
+  fill: none;
+  stroke: #231F20;
+  stroke-width: 0.43;
+  stroke-miterlimit: 10;
+}
+
+.st25 {
+  fill: none;
+  stroke: #231F20;
+  stroke-width: 0.43;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.st26 {
+  fill: none;
+  stroke: #231F20;
+  stroke-width: 0.5005;
+  stroke-miterlimit: 10;
+}
+
+.st27 {
+  fill: none;
+  stroke: #231F20;
+  stroke-width: 0.5005;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}

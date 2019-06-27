@@ -1,148 +1,11 @@
 <html>
 <head>
 
-
-  <style>
-
-    body{
-      margin: 50px;
-    font-family: 'Playfair Display', serif;
-    }
-
-    /* borders */
-    #top, #bottom, #left, #right {
-  	background: #FFA2C9;
-  	position: fixed;
-  	}
-  	#left, #right {
-  		top: 0; bottom: 0;
-  		width: 30px;
-  		}
-  		#left { left: 0; }
-  		#right { right: 0; }
-
-  	#top, #bottom {
-  		left: 0; right: 0;
-  		height: 30px;
-  		}
-  		#top { top: 0; }
-  		#bottom { bottom: 0; }
-
-      /* colcade */
-
-      /* Using floats */
-      * { box-sizing: border-box; }
-
-      .grid {
-        /* border: 1px solid; */
-      }
-
-      .grid:after {
-        display: block;
-        content: '';
-        clear: both;
-      }
-
-
-      .grid-col {
-        float: left;
-        width: 49%;
-        margin-right: 2%;
-        background: #fff;
-      }
-
-
-      .grid-col--4 { margin-right: 0; }
-
-      /* hide two middle */
-      .grid-col--2, .grid-col--3 { display: none; }
-
-      @media ( min-width: 768px ) {
-        .grid-col { width: 32%; }
-        .grid-col--2 { display: block; }
-      }
-
-      @media ( min-width: 1200px ) {
-        .grid-col { width: 23.5%; }
-        .grid-col--2, .grid-col--3 { display: block; }
-      }
-
-      .grid-item {
-        background: #eee;
-        margin-bottom: 20px;
-      }
-      .grid-item img{width:100%;}
-
-      /* .grid-item--a { height:  80px; }
-      .grid-item--b { height: 140px; }
-      .grid-item--c { height: 300px; } */
-
-
-nav{
-color:#F56CB5;
-  margin-bottom: 20px;
-  /* border:6px solid #FFA2C9; */
-  text-align:center;
-  display: flex;
-  flex-direction: row
-}
-
-.hand-gif{
-  width:170px;
-}
-
-/* #about{float:left;}
-#contact{float:right;} */
-.nav-item{
-color:#F56CB5;
-
-display: flex;
- align-items: center;
- justify-content: center;
-  width:   23.5%;
-  background: #ffd6e7;
-  transition: .5s all;
-text-decoration:none;}
-
-.nav-item:hover{
-  background:#FFA2C9;
-  color: #fff;
-
-
-}
-
-.logo-box{
-  width: 53%;
-  background:#ffecf4;
-  transition: .5s all;
-}
-
-.logo-box:hover{
-  background:#FFA2C9;
-
-}
-.logo-box .logo-type{  transition: .5s all;}
-.logo-box:hover .logo-type{
-  fill:#fff;
-
-}
-
-
-.logo{
-  max-width:450px;
-}
-
-<!-- 23.5% width for left; -->
-
-
-  </style>
-
-
   <script src="https://unpkg.com/colcade@0/colcade.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 
-
+<link rel="stylesheet" type="text/css" href="/styles/styles.css">
 
 </head>
 
@@ -184,27 +47,6 @@ xhr.send();
 
   <script src="static/grid.js"></script>
 
-  <!-- <div class="grid-item grid-item--b"></div>
-  <div class="grid-item grid-item--a"></div>
-  <div class="grid-item grid-item--c"></div>
-  <div class="grid-item grid-item--a"></div>
-  <div class="grid-item grid-item--a"></div>
-  <div class="grid-item grid-item--b"></div>
-  <div class="grid-item grid-item--c"></div>
-  <div class="grid-item grid-item--b"></div>
-  <div class="grid-item grid-item--a"></div>
-  <div class="grid-item grid-item--c"></div>
-  <div class="grid-item grid-item--a"></div>
-  <div class="grid-item grid-item--a"></div>
-  <div class="grid-item grid-item--b"></div>
-  <div class="grid-item grid-item--c"></div>
-  <div class="grid-item grid-item--b"></div>
-  <div class="grid-item grid-item--a"></div>
-  <div class="grid-item grid-item--c"></div>
-  <div class="grid-item grid-item--a"></div>
-  <div class="grid-item grid-item--a"></div>
-  <div class="grid-item grid-item--b"></div>
-  <div class="grid-item grid-item--c"></div> -->
 </div>
 
 </body>
