@@ -160,6 +160,15 @@ nav {
   padding:0 2.5%;
   border-left: 10px solid #FFECF4;
 }
+
+
+.resume-text{
+  padding:0 2.5%;
+   column-count: 2;
+  /* border-left: 10px solid #FFECF4; */
+}
+
+
 .about-text h2{
   font-weight:100;
   color:#801E47;

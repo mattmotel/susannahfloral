@@ -1,0 +1,103 @@
+<html>
+<head>
+
+  <title>Susannah McInerney | Floral Design</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+  <script src="//unpkg.com/colcade@0/colcade.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+
+
+  <link href="//fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+
+
+</head>
+
+<body>
+<script>
+
+var xhr= new XMLHttpRequest();
+xhr.open('GET', 'static/nav.html', true);
+xhr.onreadystatechange= function() {
+    if (this.readyState!==4) return;
+    if (this.status!==200) return; // or whatever error handling you want
+    document.getElementById('nav').innerHTML= this.responseText;
+};
+xhr.send();
+
+</script>
+
+<nav class="nav" id="nav">
+  </nav>
+
+<!-- border -->
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
+
+
+<!-- Colcade -->
+
+
+<!-- Colcade HTML init -->
+
+<div>
+<!--
+<img src="assets/flower_hands.jpg" class="about-image"/> -->
+<div class="resume-text">
+
+
+  <h3>Education</h3>
+  <p><strong><em>Savannah College of Art and Design </em>| Savannah, GA</strong></p>
+  <p>Bachelor of Fine Arts in Fashion Design</p>
+  <p>&bull; GPA 3.7, Dean&rsquo;s List, graduated cum laude</p>
+  <p>&bull; Awarded Portfolio Scholarship by SCAD for apparel, painting, and jewelry design</p>
+
+
+  <h3>Industry Experience</h3>
+  <p><strong><em>Petit Jardin en Ville </em>| Philadelphia, PA | <em>Jan 2018-May 2019</em></strong></p>
+  <p><strong>Floral Design Assistant/Studio Manager</strong></p>
+  <p>&bull; Able to demonstrate floral design skills in a variety of styles, capturing the creative direction unique to each venue, client, or bride</p>
+  <p>&bull; Provided outstanding customer service through resolving customer&rsquo;s questions and needs and continuously nurturing existing and new client relationships </p>
+  <p>&bull; Managed studio logistics including daily order intake and processing, set-up and break down of store, overseeing of visual merchandising for exciting store styling</p>
+  <p>&bull; Contributed in the design process from proposal stage to execution, designing floral and plant pieces for weddings, photo shoots, pop-up events, retail spaces, and more</p>
+  <p>&bull; Ensured timely and efficient processing of florals in a high volume studio with several product deliveries per day. We focused on high end, seasonal, and delicate blooms to be handled with precision and care</p>
+  <p>&bull; Trusted with organization and execution of event pieces, weekly client orders, and daily customer orders. Orchestrated delivery, set-up and breakdown for weddings and other high demand events while working as a liaison with other vendors</p>
+  <p><strong><em>Anthrothpologie </em>| Philadelphia, PA | <em>August 2015-October 2016</em></strong></p>
+  <p><strong>Design Coordinator</strong></p>
+  <p>&bull; Managed team communications on a logistical level, presenting season calendars and new best practices to confirm deadlines are met</p>
+  <p>&bull; Worked closely with cross-functional and overseas teams to keep a calculated perspective in daily tasks, project execution, and online systems accuracy </p>
+  <p>&bull; Assisted with meeting prep to ensure material is <br /> presented in an exciting and fresh way with emphasis <br /> on the brand identity </p>
+  <p>&bull; Creative problem solving and troubleshooting to outline <br /> the responsibilities of this new role as it relates to the greater team </p>
+
+  <p><strong><em>Stella &amp; Dot Design Studio </em>| New York, NY | <em>Jan 2015-May 2015</em></strong></p>
+  <p><strong>Design Coordinator</strong></p>
+  <p>&bull; Point person for team communications and season calendar, particularly as it relates to tech pack <br /> development and season hand off</p>
+  <p>&bull; Maintained the flexibility to focus on various design related projects as they arise to ensure big picture brand priorities are met, coordinating strategies between domestic and international offices</p>
+  <p>&bull; Ability to work independently within a fast paced setting of quick decisions, immediate deadlines, and changing needs</p>
+  <p><strong><em>Jones New York </em>| New York, NY | <em>May 2012-October 2014</em></strong></p>
+  <p><strong>Design Support Coordinator</strong></p>
+  <p>&bull; Understanding of all division&rsquo;s work stages and needs through online systems to ensure Design is coordinating efforts within the larger team to remain consistent with the brand calendar</p>
+  <p>&bull; Unique position in the Woven/Knits Design teams acting as liaison between various departments including Tech, R&amp;D, Product Development, Planning, Sales, and Merchandising</p>
+  <p>&bull; Worked across several brands to ensure a calculated perspective is kept in daily tasks- including season color development, season hand off, and communicating style changes</p>
+  <p><strong><em>Hansae Co. Ltd. </em>| New York, NY | <em>February 2011-Jan 2012</em></strong></p>
+  <p><strong>Assistant Designer | Accounts: Target, Gap, A&eacute;ropostale, VS Pink </strong></p>
+  <p>&bull; Developed all aspects of design process from initial direction and fabric selection, to tech packs and customer meetings for all categories including women&rsquo;s, intimates, juniors, and active</p>
+  <p>&bull; Played intricate role in creating quarterly trend book through extensive research, creative concept meetings, and execution of team ideas culminating in traveling internationally for trend presentations</p>
+  <p>&bull; Account driven market research, including making monthly trend-forward design reports referenced by both domestic and overseas teams</p>
+
+
+  <h3>Contributions</h3>
+  <p><strong><em>D&icirc;ner en Blanc | 2018</em></strong></p>
+  <p>&bull; Official florist for the Philadelphia chapter of the worldwide cultural dining event. </p>
+  <p><strong><em>PAWS Volunteering Group | 2016-2018</em></strong></p>
+  <p>&bull; Working to enrich local community through monthly events that support animal shelters and adoption</p>
+</div>
+
+</div>
+
+</body>
+</html>
