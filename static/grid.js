@@ -58,7 +58,9 @@ var photos = [
   "vase_2.jpg",
   "vase_3.jpg",
   // "vase_4.jpg",
-  "vase_5.jpg"
+  "vase_5.jpg",
+  "IMG-9530.JPG",
+  "IMG-9542.JPG"
 ];
 
 
