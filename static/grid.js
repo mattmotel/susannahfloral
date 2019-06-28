@@ -60,7 +60,7 @@ var photos = [
   // "vase_4.jpg",
   "vase_5.jpg",
   "IMG-9530.JPG",
-  "IMG-9542.JPG"
+  "IMG-9542.JPG",
   "IMG-2144.jpeg",
   "IMG-2175.jpeg"
 ];
